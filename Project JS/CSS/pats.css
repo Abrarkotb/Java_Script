@@ -812,3 +812,103 @@ font-size: 20px;
  
     justify-content: center;
 }
+/*=================================form============================================================*/
+form {
+  width:400px;
+  margin: 10px;
+  padding-left: 6in;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+border: solid;
+border-width: 3px;
+border-color: rgb(180, 113, 149);
+}
+.form label {
+  display:inline-flex;
+  margin: 5px;
+  width: 50px;
+  text-align: center;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="password"], 
+form input[type="number"],
+form input[type="date"],
+form input[type="tel"]{
+ display: grid;
+
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  border-color: rgb(30, 199, 221);
+  font-style: normal;
+  box-shadow: #ccc;
+  outline: 0;
+}
+span + span {
+  margin-left: 10px;
+}
+#slider:hover {
+  opacity: 1;
+}
+form input[type="submit"] {
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline;
+}
+form input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+form input[type="reset"] {
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: #a00505;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  display: inline-flex;
+}
+form input[type="reset"]:hover {
+  background-color: #ff0404;
+}
+/* Tooltip container */
+.tooltip {
+position: relative;
+display: inline;
+border-bottom:none;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+visibility: hidden;
+width: 120px;
+background-color: white;
+text-align: center;
+padding: 5px 0;
+border-radius: 6px;
+
+/* Position the tooltip text - see examples below! */
+position: absolute;
+z-index: 1;
+
+opacity: 0;
+transition: opacity 1s;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+visibility: visible;
+opacity: 1;
+}
