@@ -9,7 +9,7 @@
 body{
     /* cursor:url("../Media/cat2.png"),pointer; */
     background-image:url(../Media/imageedit_2_2385342095.png);
-    background-color:#d2edf9 ;
+    background-color:#d8e0e7;
     /* background-size: cover;  */
     background-repeat: repeat;
 
@@ -812,24 +812,46 @@ font-size: 20px;
  
     justify-content: center;
 }
-/*=================================form============================================================*/
-form {
-  width:400px;
-  margin: 10px;
-  padding-left: 6in;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-border: solid;
-border-width: 3px;
-border-color: rgb(180, 113, 149);
+
+/*==============================================================================form==============================================================================================*/
+
+body{
+  background-image: url(../Media/bg4\ .jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.form label {
-  display:inline-flex;
-  margin: 5px;
-  width: 50px;
+
+.form{
+  /* margin-top: 30px; */
+background-color: rgb(241, 219, 223);
+ margin: auto;
+ /* text-align: center;
+ align-items: center; */
+ width: 400px;
+ height: 1800px;
+ border: 5px solid black;
+ /* position: relative; */
+ box-shadow: #ccc;
+  outline: 0;
+}
+form h1{
+  color: #928c92;
   text-align: center;
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
 }
+form label {
+  color: #473a47;;
+  /* display:inline-flex; */
+  /* margin: 5px; */
+  text-align:right;
+  font-size: 34px;
+  /* display: inline-block; */
+}
+.input{
+  width:100px;
+}
+
 form input[type="text"],
 form input[type="email"],
 form input[type="password"], 
@@ -843,54 +865,47 @@ form input[type="tel"]{
   border: 1px solid #ccc;
   border-radius: 5px;
   width: 200px;
-  border-color: rgb(30, 199, 221);
+  border-color: rgb(182, 85, 153);
   font-style: normal;
   box-shadow: #ccc;
   outline: 0;
 }
-span + span {
-  margin-left: 10px;
-}
-#slider:hover {
-  opacity: 1;
-}
-form input[type="submit"] {
+/* 
+ form input {
   margin: 20px;
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
+  padding: 10px 20px; 
+  background-color: #8d758b;
+  color: #ece0e0;
+  border: 1px solid palevioletred;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 16px;
-  display: inline;
-}
-form input[type="submit"]:hover {
-  background-color: #3e8e41;
-}
+  display: inline-block;
+  display: inline-flex; 
+} */
 
-form input[type="reset"] {
-  margin: 20px;
-  padding: 10px 20px;
-  background-color: #a00505;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  display: inline-flex;
-}
-form input[type="reset"]:hover {
-  background-color: #ff0404;
-}
-/* Tooltip container */
+/* 
 .tooltip {
 position: relative;
-display: inline;
+display: inline-block;
 border-bottom:none;
-}
+} */
 
-/* Tooltip text */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .tooltip .tooltiptext {
 visibility: hidden;
 width: 120px;
@@ -899,7 +914,7 @@ text-align: center;
 padding: 5px 0;
 border-radius: 6px;
 
-/* Position the tooltip text - see examples below! */
+
 position: absolute;
 z-index: 1;
 
@@ -907,8 +922,8 @@ opacity: 0;
 transition: opacity 1s;
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
+
 .tooltip:hover .tooltiptext {
 visibility: visible;
 opacity: 1;
-}
+}   
