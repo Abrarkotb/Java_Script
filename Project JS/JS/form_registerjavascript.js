@@ -28,7 +28,7 @@ function save_user()
 delete user["submit_btn"];
 delete user["reset_btn"];
 window.localStorage.setItem(all_items[8].value,JSON.stringify(user));
-window.location.href="../Javascript_Project/Project JS/Pages/Home.html";
+//window.location.href="../Javascript_Project/Project JS/Pages/Home.html";
 }
 else if(all_items[8].value==="")
 {
