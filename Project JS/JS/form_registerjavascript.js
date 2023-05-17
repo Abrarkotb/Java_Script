@@ -15,23 +15,26 @@ function save_user()
     {
           all_items.forEach(item=>{
                 user[item.id]=item.value});
-    if(all_items[7].checked)
+    
+       if(all_items[7].checked)
     { 
       delete user["male"];  
-
-
     }
     else if(all_items[6].checked)
     {
          delete user["female"]
     }
+
 delete user["submit_btn"];
 delete user["reset_btn"];
 window.localStorage.setItem(all_items[8].value,JSON.stringify(user));
 window.location.href="../Javascript_Project/Project JS/Pages/Home.html";
 }
-else if(all_items[8].value!=="")
+else if(all_items[8].value==="")
 {
-    alert("you are already registered");
+    return;
+}
+else{
+    
 }
 }
