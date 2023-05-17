@@ -35,8 +35,6 @@ else if(all_items[8].value==="")
     return;
 }
 else{
-let popup=document.getElementById("myPopup");
-popup.innerText="you already registered"
-popup.classList.toggle("show")
+    
 }
 }
