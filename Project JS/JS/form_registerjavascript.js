@@ -2,11 +2,11 @@ let Submit_btn=document.getElementById("submit_btn");
 let all_items=document.querySelectorAll("input");
 let user={}
 let users=[]
-Submit_btn.addEventListener("click",()=>
+Submit_btn.addEventListener("click",(e)=>
 {
 
    save_user()
-  
+return false; 
 })
 function save_user()
 {
@@ -28,7 +28,7 @@ function save_user()
 delete user["submit_btn"];
 delete user["reset_btn"];
 window.localStorage.setItem(all_items[8].value,JSON.stringify(user));
-//window.location.href="../Javascript_Project/Project JS/Pages/Home.html";
+window.open("../Pages/Home.html","_self")
 }
 else if(all_items[8].value==="")
 {
@@ -38,5 +38,3 @@ else{
     
 }
 }
-
-

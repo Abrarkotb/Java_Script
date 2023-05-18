@@ -13,6 +13,7 @@ if(storedemail !==  null){
  storedpass = storedemail["password"];
      if(storedpass === pass_btn){
          alert('login succesfuly');
+         window.open("../Pages/Home.html","_self")
       }else if(storedpass !== pass_btn){
           alert('invaild password,tyr again')
       }
