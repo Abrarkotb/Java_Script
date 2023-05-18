@@ -11,10 +11,10 @@ function check_user(){
     let storedpass ;
 if(storedemail !==  null){
  storedpass = storedemail["password"];
-     if(storedpass === pass_btn){
+     if(storedpass === pass_btn.value){
          alert('login succesfuly');
          window.open("../Pages/Home.html","_self")
-      }else if(storedpass !== pass_btn){
+      }else if(storedpass !== pass_btn.value){
           alert('invaild password,tyr again')
       }
 }else if(storedemail == null){
