@@ -1,4 +1,4 @@
-function w3_open() {
+function usr_open() {
     var x = document.getElementById("myAccordion");
     if (x.style.display === 'none') {
       x.style.display = 'block';
@@ -15,7 +15,7 @@ function w3_open() {
     }
   }
 
-  function w3_close() {
+  function usr_close() {
     document.getElementById("myAccordion").style.display = "none";
   }
   function open_xs_menu(x) {

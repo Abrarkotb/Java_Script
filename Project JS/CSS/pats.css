@@ -75,12 +75,12 @@ nav{
    text-align: center;
    margin-left: 200px;
 }    
-.w3-card-2{
-  width: 200px;
-  height: 65px;
+.w-card-2{
+  width:60%;
+  height: 60%;
   background-color: rgb(15, 14, 14);
-  overflow: visible;
-  vertical-align: middle;
+  overflow:visible;
+  vertical:center;
 }
 .button{
 width: 80px;
