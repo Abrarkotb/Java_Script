@@ -2,12 +2,13 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    
 }
 /* .custom {
     cursor: url(images/my-cursor.png), auto;
   } */
 body{
-    /* cursor:url("../Media/cat2.png"),pointer; */
+   
     background-image:url(../Media/imageedit_2_2385342095.png);
     background-color:#d8e0e7;
     /* background-size: cover;  */
@@ -39,7 +40,7 @@ nav{
     flex-direction: row;
     background-color: #d2edf9;
 }
- .list{
+.list{
     width:50%px ;
     height: 50px;
     display: flex;
@@ -74,6 +75,13 @@ nav{
    text-align: center;
    margin-left: 200px;
 }    
+.w3-card-2{
+  width: 200px;
+  height: 65px;
+  background-color: rgb(15, 14, 14);
+  overflow: visible;
+  vertical-align: middle;
+}
 .button{
 width: 80px;
 height: 50px;
