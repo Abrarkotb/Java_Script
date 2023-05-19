@@ -8,6 +8,7 @@ login_btn.addEventListener("click",(e)=>{
     window.open("../Pages/LOGIN.html","_self");
 })
 
+
 let About_btn=document.getElementById("about_btn");
 if(About_btn)
     {
