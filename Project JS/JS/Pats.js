@@ -9,6 +9,17 @@ login_btn.addEventListener("click",(e)=>{
 })
 
 let About_btn=document.getElementById("about_btn");
-About_btn.addEventListener("click",(e)=>{
+if(About_btn)
+    {
+About_btn.addEventListener("click",()=>{
     window.open("../Pages/About.html","_self");
-})
+},false)
+    }
+let Home_btn=document.getElementById("home_btn");
+if(Home_btn)
+    {
+Home_btn.addEventListener("click",()=>{
+    
+    window.open("../Pages/Home.html","_self");
+},false)
+}

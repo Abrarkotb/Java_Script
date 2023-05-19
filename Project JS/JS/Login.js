@@ -12,7 +12,7 @@ function check_user(){
 if(storedemail !==  null){
  storedpass = storedemail["password"];
      if(storedpass === pass_btn.value){
-        window.sessionStorage.setItem(login_email.value,"true"); 
+        window.sessionStorage.setItem(login_email.value,storedemail); 
         alert('login succesfuly');
         window.open("../Pages/Home.html","_self")
       }else if(storedpass !== pass_btn.value){
