@@ -17,19 +17,21 @@
     
   
   <nav class="navbar bg-light navbar-dark sticky-top flex-md-nowrap p-0 shadow">
-    <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">Pats Shop</a>
+    <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">Pats Shop
+      <img class="img_user"src="../Media/AS000765_00.gif">
+    </a>
     <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <input class="form-control form-control-dark w-100" type="text" placeholder="Search" aria-label="Search">
-    <ul class="navbar-nav px-3">
+    <!-- <ul class="navbar-nav px-3">
       <li class="nav-item text-nowrap">
         <a class="nav-link" href="#">Sign out</a>
       </li>
       <li class="nav-item text-nowrap">
         <a class="nav-link" href="#">Home Page </a>
       </li>
-    </ul>
+    </ul> -->
   </nav>
   
   <div class="container-fluid">
@@ -38,39 +40,39 @@
         <div class="sidebar-sticky pt-3">
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link active" href="#">
+              <a class="nav-link active" href="../Pages/Home.html">
                 <span data-feather="home"></span>
-                Dashboard <span class="sr-only">(current)</span>
+              ###<span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
                 <span data-feather="file"></span>
-                Orders
+                Home
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="../Pages/About.html">
                 <span data-feather="shopping-cart"></span>
-                Products
+                Categores
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
                 <span data-feather="users"></span>
-                Customers
+                About
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
                 <span data-feather="bar-chart-2"></span>
-                Reports
+                Contant
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="https://www.facebook.com/">
                 <span data-feather="layers"></span>
-                Integrations
+                Follow Us
               </a>
             </li>
           </ul>
@@ -82,28 +84,28 @@
             </a>
           </h6>
           <ul class="nav flex-column mb-2">
-            <li class="nav-item">
+            <li id="updat" class="nav-item" onclick="">
               <a class="nav-link" href="#">
                 <span data-feather="file-text"></span>
-                Current month
+                update Password 
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
                 <span data-feather="file-text"></span>
-                Last quarter
+                FeedBacks
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
                 <span data-feather="file-text"></span>
-                Social engagement
+                hhhhhhhhhhh
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
                 <span data-feather="file-text"></span>
-                Year-end sale
+                hhhhhhhhhh
               </a>
             </li>
           </ul>
@@ -112,22 +114,52 @@
   
       <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-          <h1 class="h2">Dashboard</h1>
+          <h1 class="h2">Use Name </h1>
           <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group mr-2">
-              <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
-              <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Log out </button>
+              <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Export</button> -->
             </div>
-            <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+            <!-- <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
               <span data-feather="calendar"></span>
               This week
-            </button>
+            </button> -->
           </div>
         </div>
-  
-        <!-- <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas> -->
-  
-        
+    <div class="container">
+      <div class="row">
+        <div class="card">
+          <div class="card_header">
+           <h1> Change Password </h1>
+           <div class="card_body">
+            <form>
+              <div class="input-group mb-1 ml-3">
+                <div>
+                  <h4>Enter Old Password</h4>
+                <input type="password" value="FakePSW" id="myInput">
+                <div class="input-group-text">
+                  <input type="checkbox" onclick="myFunction()">
+                  <span class="ml-2">Show Password</span>
+                </div>
+                <br><br>
+               <h4>Enter New Password</h4>
+                <input type="password" value="FakePSW" id="myInput">
+               
+                <h4>Re-write New password</h4>
+                <input type="password" value="FakePSW" id="myInput">
+              
+
+               </div>
+                </div>
+              </div>
+              </div>
+                
+            </form>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
       </main>
     </div>
   </div>

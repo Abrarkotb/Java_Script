@@ -14,7 +14,7 @@ if(storedemail !==  null){
      if(storedpass === pass_btn.value){
         window.sessionStorage.setItem(login_email.value,"true"); 
         alert('login succesfuly');
-         window.open("../Pages/Home.html","_self")
+        window.open("../Pages/Home.html","_self")
       }else if(storedpass !== pass_btn.value){
           alert('invaild password,tyr again')
       }
