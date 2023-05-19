@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="icon" type="image/icon" href="../Media/cat2.png" />
+    <link rel="stylesheet" href="../CSS/all.css" />
+    <link rel="stylesheet" href="../CSS/animate.css" />
+    <link rel="stylesheet" href="../CSS/bootstrap.css" />
+    <link rel="stylesheet" href="../CSS/pats.css" />
+
+  </head>
+
+
+  <body>
+        <nav class="nav">
+            <img  class="logo" loop src="../Media/AS000765_00.gif">
+             <div class="container1"  > 
+                <div class="list">
+                  <ul>
+                    <li class="button">Home</li>
+                    <li class="button"> Categores
+                    </li>
+                    <li id="about_btn" class="button">About</li>
+                    <li class="button">Contant</li>
+                  </ul>
+                </div>
+        
+                <div class="list2">
+                  <button id="log_btnn" class="button">Log in </button> 
+                  <button class="button" id="register_btn">Register</button>
+                  <br/>
+                  <button class="button">Log out</button>
+                  <a class="w-bar-item ga-top w-button bar-item-hover w-padding-24" href="javascript:void(0)" onclick="usr_open()" id="navbtn_menu" title="Menu" style="width:93px"> <i class="fa-solid fa-user fa-2x "></i> <i class="fa fa-caret-down"></i><i class="fa fa-caret-up" style="display:none"></i>
+                    <div id='myAccordion' class="w-card-2 w-center w-hide-large ws-grey" style="display:none;">
+                      <a href="javascript:void(0)" onclick="usr_close()" class="w-button w-xxlarge w-right">&times;</a><br>
+                      <div class="w-container w-padding-32">
+                      <div id="sectionxs_tutorials" class="w-left-align w-show" style="background-color:#caccd8;color:white;">
+                        <p>Lorem, ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, doloremque dolores nostrum optio assumenda consequuntur recusandae laborum quibusdam beatae suscipit, voluptatibus laudantium, quidem incidunt nihil saepe consequatur hic numquam veritatis.  adipisicing elit. Suscipit quam debitis, distinctio excepturi odit vitae repellat iure optio, aliquam consectetur eveniet reiciendis rem officiis fugiat architecto minima corporis unde. Sed.</p>    
+                      </div>
+                        <!-- <a class="w3-button w3-block" style="font-size:22px;" onclick="open_xs_menu('references')" href="javascript:void(0);">References <i class='fa fa-caret-down'></i></a>
+                      </div>
+                    </div>
+              </a>
+                </div>
+             </div>
+              <!-- </i> -->
+                </div>
+              </div>
+        </nav>
+        <div class="settings">
+        <form class="settings_form">
+    <fieldset id="form_elements">
+        <label for="name">Name:</label>
+        <input class="input" type="text" id="fname"  autofocus placeholder="First Name" required minlength="3" maxlength="50">
+        <input class="input" type="text" id="midname"  placeholder="Middle Name" required min="3" max="50">
+        <input class="input" type="text" id="lname"  placeholder="Last Name" required min="3" max="50">
+        <br>
+
+        <label for="stud_name">UserName:</label>
+        <input type="text" id="username"  placeholder="UserName" required min="3" max="50">
+        <br>
+
+        <label for="BirthDate">BirthDate:</label>
+        <input type="date" id="BirthDate"  placeholder="YY-MM-DD" required  max="2005-01-01" >
+        <br>
+
+        <label for="Address">Address</label>
+        <input type="text" id="Address"   placeholder="404A Newyork st,">
+    
+        <br>
+        <label for="gender">what is your gender?</label></br>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="female">Female</label>        
+        <input type="radio" id="female" name="gender" value="Female">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email"   placeholder="example@mail.com" required maxlength="40">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password"  minlength="8" maxlength="20" pattern="[a-zA-Z0-9@$!%*?&]+" required>
+        <div class="tooltip">
+        <sup>&#x1F6C8;</sup>
+        <span class="tooltiptext"><i>your pattern should be like:[a-zA-Z0-9@$!%*?&]+</i></span>
+        </div>
+        <br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone"  placeholder="xxx-xxx-xxxx"  required>
+        <br>
+        </fieldset>
+      <input id="cancel_btn"  type="reset" value="Cancel"> 
+      <input id="save_btn" type="submit" value="Save" >
+</form>    
+</div>
+<script src="../JS/Pats.js"></script>
+<script src="../JS/user.js"></script>
+<script src="../JS/settings.js"></script>
+</body>
+</html>
