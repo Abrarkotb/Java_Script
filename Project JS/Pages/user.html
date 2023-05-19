@@ -40,13 +40,13 @@
         <div class="sidebar-sticky pt-3">
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link active" href="../Pages/Home.html">
+              <a class="nav-link active" href="#">
                 <span data-feather="home"></span>
               ###<span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="../Pages/Home.html">
                 <span data-feather="file"></span>
                 Home
               </a>
@@ -136,24 +136,26 @@
               <div class="input-group mb-1 ml-3">
                 <div>
                   <h4>Enter Old Password</h4>
-                <input type="password" value="FakePSW" id="myInput">
-                <div class="input-group-text">
+                <input type="password" value="FakePSW" id="pass_old">
+                <div >
                   <input type="checkbox" onclick="myFunction()">
                   <span class="ml-2">Show Password</span>
                 </div>
                 <br><br>
                <h4>Enter New Password</h4>
-                <input type="password" value="FakePSW" id="myInput">
-               
+                <input type="password" value="FakePSW" id="pass_new">
+                <div >
+                  <input type="checkbox" onclick="myFunction_2()">
+                  <span class="ml-2">Show Password</span>
+                </div>
+                <br><br>
                 <h4>Re-write New password</h4>
                 <input type="password" value="FakePSW" id="myInput">
-              
-
                </div>
                 </div>
               </div>
               </div>
-                
+              <input type="submit" value="Change" id="subnew_pass" onclick="changePassBtnClick()">
             </form>
            </div>
           </div>
