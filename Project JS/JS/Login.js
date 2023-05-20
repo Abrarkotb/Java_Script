@@ -26,7 +26,7 @@ if(storedemail !==  null){
           alert('invaild password,tyr again')
       }
 }else if(storedemail == null){
-    alert('please Enter valid Email');
+    alert('please Enter valid Email');z
    }
 }
 function setcookie()

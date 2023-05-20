@@ -4,44 +4,34 @@
     padding: 0px;
     
 }
-/* .custom {
-    cursor: url(images/my-cursor.png), auto;
-  } */
 body{
-   
     background-image:url(../Media/imageedit_2_2385342095.png);
-    background-color:#d8e0e7;
-    /* background-size: cover;  */
     background-repeat: repeat;
-
-    
+    background-color:  #d5edf3;;
 }
 nav{ 
     width: 100%;
-    background-color: #d2edf9;
 }
 .logo{
-    width: 120px;
-    margin-left: 70px;
-    /* height: 200px; */
-    /* display:none; */
+    width: 220px;
+    /* margin-left: 70px; */
+     margin-bottom: 40px;
     position: relative;
+    /* justify-items: left; */
 }
 .nav{
     display:flex;
     flex-direction: row;
+   background-color: #d5edf3;;
 }
-
 .container1{
-    /* width: 70%; */
-    /* height: 70%; */
+    width: 70%;
     margin: auto;
     display:flex;
-    flex-direction: row;
-    background-color: #d2edf9;
+    flex-direction: row;   
 }
 .list{
-    width:50%px ;
+    width:50% ;
     height: 50px;
     display: flex;
     flex-direction: row;
@@ -49,19 +39,17 @@ nav{
     flex-wrap: nowrap;
     text-align: center;
     line-height:30px;
-}
-.list ul{
-    width: 100%;
-    padding-left: 90px;
+    /* justify-content: right; */
 }
 .list li{
     display: inline-block;
-    color:#776b91;
+    color:white;
     width: 80px;
     background-color:rgb(216, 190, 194);
     text-align: center;
     line-height:50px;
     border-radius: 10px;
+    box-shadow:0 0 2em rgb(211, 195, 198);
 }
 .list li:hover{
     background-color: #a9d3e6;
@@ -70,34 +58,36 @@ nav{
 .list2{
    display: flex;
    flex-direction: row;
-   justify-content: space-around;
    flex-wrap: nowrap;
-   text-align: center;
-   margin-left: 200px;
+   text-align: center; 
 }
 #nav_items{visibility: hidden;}    
 #Logout_btn
 {visibility: hidden;}
 .person_img{
-  width: 30px;
+  width: 60px;
+  margin-left: 40px;
+  /* justify-content: right; */
 }
 .person_img:hover{
-  opacity: 0.5;
+  opacity: 0.3;
   cursor: pointer;
 }
-.button{
-width: 80px;
+.button_nav{
+width: 60px;
 height: 50px;
+margin-top: 10px;
 margin-right: 10px;
 cursor: pointer;
-border-radius: 25%;
-/* border:1px solid black; */
-background-color:rgb(155, 137, 140);
+border-radius: 30%;
+background-color:rgb(209, 188, 192);
 font-size:14px;
+box-shadow:0 0 2em rgb(211, 195, 198);
+cursor: pointer;
 }
-.button:hover{
-    background-color: #d2edf9;
-        opacity: 0.5;
+.button_nav:hover{
+    background-color: #6f8086;
+    opacity: 0.5;
     }
     
 
@@ -106,34 +96,24 @@ font-size:14px;
     height: 10px;
     margin-top: 10px;
     padding-left: 30px;
+    justify-content: right;
 }   
 
-h1{
+.h1_part{
     font-size: larger;
-    color:rgb(236, 203, 209); ;
+    color:rgb(219, 138, 195); 
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 90px;
 }
-
-
 .part2{
     width: 100%;
-    /* border: 1px solid rgb(182, 153, 153); */
-    /* background-image: url("../Images/bg.jpg"); */
-    /* background-size: cover;
-    background-repeat: repeat; */
  }
- 
  .container2{
      width: 70%;
      margin: auto;
-     /* border: 4px solid gray; */
      text-align: center;
      padding-top: 50px; 
      }
- 
- .container2 h1{
-     font-size: 90px;
-     color: rgb(68, 54, 65);
- }
  .container2 p{
      position: relative;
      text-align: center;
@@ -941,9 +921,9 @@ body {
 .card{
   margin: auto;
   width: 450px;
-  height: 450px;
+  height: 550px;
   background-color: #3e4684;
-  box-shadow: 0 0 2em rgb(97, 62, 73);
+  box-shadow: 0 0 2em rgb(36, 25, 28);
   display: flex;
 }
 .card h1{
@@ -1036,4 +1016,60 @@ body {
 .form-control-dark:focus {
   border-color: transparent;
   box-shadow: 0 0 0 3px rgba(105, 79, 79, 0.25);
+}
+/* =========================================================================================================================================================== */
+/* .card-body{
+  width: 300px;
+  margin-right: 20px;
+} */
+.album{
+  background-color: #c9c1c7;
+}
+.card2{
+  background-color: white;
+  box-shadow: 0 0 2em rgb(104, 91, 94);
+}
+.card_img{
+  background-color: #e4e5eb;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+.card_img1{
+  background-color: #e4e5eb;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.btn{
+  margin-right: 5px;
+  background-color: #c083b8;
+  box-shadow: 0 0 2em rgb(110, 90, 95);
+  color: white;
+}
+
+.jumbotron {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron h1 {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
 }
