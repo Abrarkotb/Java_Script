@@ -1,13 +1,13 @@
-let login_email=document.getElementById("log_email");
-let pass_btn=document.getElementById("pass_log");
-let loginbotton =document.getElementById("log_butt");
 onload=()=>{
-    if(document.cookie.indexOf("email")===0)
-    {
-      window.stop();
-      window.open("../Pages/Home.html","_self")
-    }
+  if(document.cookie.indexOf("email")===0)
+  {
+    window.stop();
+    window.open("../Pages/Home.html","_self")
   }
+}
+let login_email= document.getElementById("log_email");
+let pass_btn= document.getElementById("pass_log");
+let loginbotton =document.getElementById("log_butt");
 loginbotton.addEventListener("click",()=>
 {
    check_user()
@@ -16,17 +16,20 @@ loginbotton.addEventListener("click",()=>
 function check_user(){
     let storedemail = window.localStorage.getItem(login_email.value);
     let storedpass ;
+    storedpass = storedemail["password"];
 if(storedemail !==  null){
- storedpass = storedemail["password"];
-     if(storedpass === pass_btn.value){
+
+     if(storedpass === pass_btn){
+       storedpass = storedemail["password"];
         setcookie()
         alert('login succesfuly');
-        window.open("../Pages/Home.html","_self")
+        window.open("../Pages/Home.html","_self");
+
       }else if(storedpass !== pass_btn.value){
           alert('invaild password,tyr again')
       }
 }else if(storedemail == null){
-    alert('please Enter valid Email');z
+    alert('please Enter valid Email');
    }
 }
 function setcookie()
