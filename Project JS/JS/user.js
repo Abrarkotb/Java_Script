@@ -20,26 +20,26 @@ function myFunction() {
   // ==============================================================================================================
 
   function Function() {
-    var oldpasswprd = document.getElementById('pass_old').value;
-    var newpassword = document.getElementById('pass_new').value;
-    var confirmpassword = document.getElementById('re_writepass').value;
+    var key_email =   getElementById.localStorage.getItem(email);
+    var oldpasswprd = document.getElementById('pass_old');
+    var newpassword = document.getElementById('pass_new');
+    var confirmpassword = document.getElementById('re_writepass');
    
 
 
-if(localStorage.getItem['password'.value] === oldpasswprd){
-      if (oldPassword == "" || newpassword == "" || confirmpassword == "") {
+if(window.localStorage.getItem[key_email.value] === oldpasswprd.value){
+      if (oldPassword.value == "" || newpassword.value == "" || confirmpassword.value == "") {
         alert('Please fill all the details');
     }
     else if (oldpasswprd === newpassword) {
         alert("Old password and New Password cannot be same");
     }
-    else if (newpassword != confirmpassword) {
+    else if(newpassword != confirmpassword){
         alert("password mismatch");
-    }
-}//else if{
-//    alert('please enter your correct old pass ');
-// }
-localStorage.setItem('password', JSON.stringify(newpassword));
+    }}
+
+
+ window.localStorage.setItem(key_email[9].value , JSON.stringify(newpassword));
 }
 
 
