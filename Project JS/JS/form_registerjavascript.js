@@ -2,6 +2,13 @@ let Submit_btn=document.getElementById("submit_btn");
 let all_items=document.querySelectorAll("input");
 let user={}
 let users=[]
+onload=()=>{
+  if(document.cookie.indexOf("email")===0)
+  {
+    window.stop();
+    window.open("../Pages/Home.html","_self")
+  }
+}
 Submit_btn.addEventListener("click",(e)=>
 {
 

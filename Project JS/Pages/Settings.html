@@ -19,7 +19,7 @@
             <img  class="logo" loop src="../Media/AS000765_00.gif">
              <div class="container1"  > 
                 <div class="list">
-                  <ul>
+                  <ul id="nav_items">
                     <li class="button" id="home_btn">Home</li>
                     <li class="button"> Categores
                     </li>
@@ -32,8 +32,8 @@
                   <button id="log_btnn" class="button">Log in </button> 
                   <button class="button" id="register_btn">Register</button>
                   <br/>
-                  <button class="button">Log out</button>
-                  <a class="w-bar-item ga-top w-button bar-item-hover w-padding-24" href="javascript:void(0)" onclick="usr_open()" id="navbtn_menu" title="Menu" style="width:93px"> <i class="fa-solid fa-user fa-2x "></i> <i class="fa fa-caret-down"></i><i class="fa fa-caret-up" style="display:none"></i>
+                  <button class="button" id="Logout_btn">Log out</button>
+                  <a class="w-bar-item ga-top w-button bar-item-hover w-padding-24" href="../Pages/user.html" id="navbtn_menu" title="Menu" style="width:93px"> <img id="user_profile" class="person_img" src="../Media/person.png" ><i class="fa fa-caret-up" style="display:none"></i>
                     <div id='myAccordion' class="w-card-2 w-center w-hide-large ws-grey" style="display:none;">
                       <a href="javascript:void(0)" onclick="usr_close()" class="w-button w-xxlarge w-right">&times;</a><br>
                       <div class="w-container w-padding-32">
@@ -91,7 +91,7 @@
         <input type="tel" id="phone"  placeholder="xxx-xxx-xxxx"  required>
         <br>
         </fieldset>
-      <input id="cancel_btn"  type="reset" value="Cancel"> 
+      <input id="cancel_btn"  type="button" value="Cancel"> 
       <input id="save_btn" type="submit" value="Save" >
 </form>    
 </div>

@@ -61,7 +61,10 @@ nav{
    flex-direction: row;
    flex-wrap: nowrap;
    text-align: center; 
-}    
+}
+#nav_items{visibility: hidden;}    
+#Logout_btn
+{visibility: hidden;}
 .person_img{
   width: 60px;
   margin-left: 40px;
