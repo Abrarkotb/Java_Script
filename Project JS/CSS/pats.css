@@ -26,9 +26,10 @@ nav{
 }
 .container1{
     width: 70%;
-    margin: auto;
+    margin-top: 0px;
     display:flex;
-    flex-direction: row;   
+    flex-direction: row;
+    justify-content: right;
 }
 .list{
     width:50% ;
@@ -126,7 +127,6 @@ cursor: pointer;
      cursor: pointer;
      margin-top: 40px;
      border:1px solid rgb(179, 151, 173);
-     /* background-color:rgba(247,128,92,255); */
      font-size:14px;
   }
  .button2:hover{
