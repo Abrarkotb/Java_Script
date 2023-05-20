@@ -1,4 +1,4 @@
-
+/*
 function myFunction() {
     var x = document.getElementById("pass_old");
     if (x.type === "password") {
@@ -196,4 +196,4 @@ if(window.localStorage.getItem[key_email.value] === oldpasswprd.value){
 //     }else{
 //       alert('Wrong Password');
 //     }
-//   }
+//   }*/

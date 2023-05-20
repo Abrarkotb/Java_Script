@@ -10,23 +10,26 @@ onload=()=>{
   }
 loginbotton.addEventListener("click",()=>
 {
-   check_user()
+   check_user();
 })
 
 function check_user(){
     let storedemail = window.localStorage.getItem(login_email.value);
-    let storedpass ;
-if(storedemail !==  null){
- storedpass = storedemail["password"];
-     if(storedpass === pass_btn.value){
+if(storedemail !==  null)
+{
+ let storedpass = storedemail["password"];
+ 
+ if(storedpass === pass_btn.value){
         setcookie()
         alert('login succesfuly');
-        window.open("../Pages/Home.html","_self")
-      }else if(storedpass !== pass_btn.value){
+        window.open("../Pages/Home.html","_self");
+      }
+      else if(storedpass !== pass_btn.value){
           alert('invaild password,tyr again')
       }
+
 }else if(storedemail == null){
-    alert('please Enter valid Email');z
+    alert('please Enter valid Email');
    }
 }
 function setcookie()
@@ -34,6 +37,5 @@ function setcookie()
     const d = new Date();
     d.setTime(d.getTime() + (10*24*60*60*1000));
     let expires = "expires="+ d.toUTCString();
-    document.cookie = "email" + "=" + login_email.value + ";" + expires + ";path=/";
-  
+    document.cookie = "email" + "=" + login_email.value + ";" + expires + ";path=/"; 
 }

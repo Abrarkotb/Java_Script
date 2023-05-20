@@ -11,9 +11,8 @@ onload=()=>{
 }
 Submit_btn.addEventListener("click",(e)=>
 {
-
    save_user()
-return false; 
+   return false; 
 })
 function save_user()
 {
@@ -40,8 +39,5 @@ window.open("../Pages/Home.html","_self")
 else if(all_items[8].value==="")
 {
     return;
-}
-else{
-    
 }
 }
