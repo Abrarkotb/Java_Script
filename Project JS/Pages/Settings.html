@@ -15,41 +15,27 @@
 
 
   <body>
-        <nav class="nav">
-            <img  class="logo" loop src="../Media/AS000765_00.gif">
-             <div class="container1"  > 
-                <div class="list">
-                  <ul id="nav_items">
-                    <li class="button" id="home_btn">Home</li>
-                    <li class="button"> Categores
-                    </li>
-                    <li id="about_btn" class="button">About</li>
-                    <li class="button">Contant</li>
-                  </ul>
-                </div>
-        
-                <div class="list2">
-                  <button id="log_btnn" class="button">Log in </button> 
-                  <button class="button" id="register_btn">Register</button>
-                  <br/>
-                  <button class="button" id="Logout_btn">Log out</button>
-                  <a class="w-bar-item ga-top w-button bar-item-hover w-padding-24" href="../Pages/user.html" id="navbtn_menu" title="Menu" style="width:93px"> <img id="user_profile" class="person_img" src="../Media/person.png" ><i class="fa fa-caret-up" style="display:none"></i>
-                    <div id='myAccordion' class="w-card-2 w-center w-hide-large ws-grey" style="display:none;">
-                      <a href="javascript:void(0)" onclick="usr_close()" class="w-button w-xxlarge w-right">&times;</a><br>
-                      <div class="w-container w-padding-32">
-                      <div id="sectionxs_tutorials" class="w-left-align w-show" style="background-color:#caccd8;color:white;">
-                        <p>Lorem, ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, doloremque dolores nostrum optio assumenda consequuntur recusandae laborum quibusdam beatae suscipit, voluptatibus laudantium, quidem incidunt nihil saepe consequatur hic numquam veritatis.  adipisicing elit. Suscipit quam debitis, distinctio excepturi odit vitae repellat iure optio, aliquam consectetur eveniet reiciendis rem officiis fugiat architecto minima corporis unde. Sed.</p>    
-                      </div>
-                        <!-- <a class="w3-button w3-block" style="font-size:22px;" onclick="open_xs_menu('references')" href="javascript:void(0);">References <i class='fa fa-caret-down'></i></a>
-                      </div>
-                    </div>
-              </a>
-                </div>
-             </div>
-              <!-- </i> -->
-                </div>
-              </div>
-        </nav>
+    <nav class="nav">
+      <img  class="logo" src="../Media/AS000765_00.gif">
+       <div class="container1"  >
+          <div class="list">
+            <ul id="nav_items">
+              <li class="button_nav">Home</li>
+              <li class="button_nav"> Categories
+              </li>
+              <li id="about_btn" class="button_nav">About</li>
+              <li class="button_nav">Contant</li>
+            </ul>
+          </div>
+          <div class="list2">
+            <button id="log_btnn" class="button_nav">Log in </button> 
+            <button class="button_nav" id="register_btn">Register</button>
+            <br/>
+            <button class="button_nav" id="Logout_btn">Log out</button>
+        <a  href="../Pages/user.html"><img id="user_profile" class="person_img" src="../Media/person.png" ></a>
+     </div>
+        </div>
+  </nav>
         <div class="settings">
         <form class="settings_form">
     <fieldset id="form_elements">
@@ -92,7 +78,7 @@
         <br>
         </fieldset>
       <input id="cancel_btn"  type="button" value="Cancel"> 
-      <input id="save_btn" type="submit" value="Save" >
+      <button id="save_btn" type="submit" value="Save" ></button>
 </form>    
 </div>
 <script src="../JS/Pats.js"></script>

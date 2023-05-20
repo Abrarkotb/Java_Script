@@ -1,6 +1,3 @@
-let login_email=document.getElementById("log_email");
-let pass_btn=document.getElementById("pass_log");
-let loginbotton =document.getElementById("log_butt");
 onload=()=>{
     if(document.cookie.indexOf("email")===0)
     {
@@ -8,16 +5,19 @@ onload=()=>{
       window.open("../Pages/Home.html","_self")
     }
   }
-loginbotton.addEventListener("click",()=>
+  let login_email=document.getElementById("log_email");
+  let pass_btn=document.getElementById("pass_log");
+  let loginbotton =document.getElementById("log_butt");  
+  loginbotton.addEventListener("click",()=>
 {
    check_user();
 })
 
 function check_user(){
-    let storedemail = window.localStorage.getItem(login_email.value);
+    let storedemail =JSON.parse(window.localStorage.getItem(login_email.value));
 if(storedemail !==  null)
 {
- let storedpass = storedemail["password"];
+ let storedpass = storedemail['password'];
  
  if(storedpass === pass_btn.value){
         setcookie()
@@ -25,7 +25,7 @@ if(storedemail !==  null)
         window.open("../Pages/Home.html","_self");
       }
       else if(storedpass !== pass_btn.value){
-          alert('invaild password,tyr again')
+          alert('invaild password,try again')
       }
 
 }else if(storedemail == null){

@@ -1,7 +1,6 @@
-let logout_btn=document.getElementById("Logout_btn");
-let nav_barlist=document.getElementById("nav_items");
 let reg_btn=document.getElementById("register_btn");
 let user_prof=document.getElementById("user_profile");
+let nav_barlist=document.getElementById("nav_items");
 onload=()=>{
     if(document.cookie.indexOf("email")===0)
     {
@@ -20,16 +19,16 @@ onload=()=>{
     }
 }
 
-reg_btn.addEventListener("click",(e)=>{
+reg_btn.addEventListener("click",()=>
+{
     window.open("../Pages/Form_register.html","_self");
 })
-
 let login_btn=document.getElementById("log_btnn");
 login_btn.addEventListener("click",(e)=>{
     window.open("../Pages/LOGIN.html","_self");
     
 })
-
+let logout_btn=document.getElementById("Logout_btn");
 logout_btn.addEventListener("click",(e)=>{
     window.open("../Pages/Home.html","_self");
     document.cookie="email=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
