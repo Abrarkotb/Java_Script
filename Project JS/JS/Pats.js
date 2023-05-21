@@ -48,3 +48,12 @@ Home_btn.addEventListener("click",()=>{
     window.open("../Pages/Home.html","_self");
 },false)
 }
+
+let Category_btn=document.getElementById("category_btn");
+if(Category_btn)
+    {
+Category_btn.addEventListener("click",()=>{
+    
+    window.open("../Pages/Categores .html","_self");
+},false)
+}
