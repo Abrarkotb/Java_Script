@@ -1,12 +1,3 @@
-// let contect = document.querySelectorAll('#apis');
-// let out ="";
-// fetch("https://api.thecatapi.com/v1/images/search?limit=10")
-// .then((response)=> response.json())
-// .then((x-api-key) => {
-//     return 
-     
-// })
-
 let content = document.querySelector("#content");
 
 let out = "";
@@ -14,12 +5,7 @@ fetch("https://www.googleapis.com/books/v1/volumes?q=quilting")
 .then((response) => response.json())
 .then((books) => {
   // console.log(books)
-    return books.items.map(book => {
-      
-      // console.log(book.id)
-
-      // console.log(book.volumeInfo.imageLinks)
-      
+    return books.items.map(book => {      
       out += `
 
       <div class="card col-3">
@@ -51,4 +37,3 @@ function singleBook(id){
     window.location.href = "single-page.html?" + id;
 
 }
-
