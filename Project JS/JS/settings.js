@@ -2,14 +2,11 @@ let all_formelem=document.querySelectorAll("input");
 let user_info={};
 let loginemail;
 addEventListener("load",()=>{
-
-    onload=()=>{
         if(document.cookie.indexOf("email")!==0)
         {
           window.stop();
           window.open("../Pages/Home.html","_self")
         }
-      }
     let cookindex=document.cookie.indexOf("email");
 if(cookindex===0)
 {
