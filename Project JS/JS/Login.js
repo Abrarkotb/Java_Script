@@ -4,8 +4,7 @@ onload=()=>{
     window.stop();
     window.open("../Pages/Home.html","_self")
   }
-  let login_email=document.getElementById("log_email");
-  let pass_btn=document.getElementById("pass_log");
+  
   let loginbotton =document.getElementById("log_butt");  
   loginbotton.addEventListener("click",()=>
 {
@@ -13,6 +12,8 @@ onload=()=>{
 })}
 
 function check_user(){
+  let login_email=document.getElementById("log_email");
+  let pass_btn=document.getElementById("pass_log");
     let storedemail =JSON.parse(window.localStorage.getItem(login_email.value));
 if(storedemail !==  null)
 {
@@ -33,6 +34,7 @@ if(storedemail !==  null)
 }
 function setcookie()
 {
+  let login_email=document.getElementById("log_email");
     const d = new Date();
     d.setTime(d.getTime() + (10*24*60*60*1000));
     let expires = "expires="+ d.toUTCString();

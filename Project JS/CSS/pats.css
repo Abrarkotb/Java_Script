@@ -825,13 +825,18 @@ opacity: 1;
 /* =====================================================user page================================================================================================ */
 body {
   font-size: .875rem;
-  background-color:#d5edf3;;;
+  background-color:#d5edf3;
+  background-image: url(../Media/imageedit_2_2385342095.png);
 }
 
 .feather {
   width: 16px;
   height: 16px;
   vertical-align: text-bottom;
+}
+.navbar{
+  background-color:#d5edf3 ;
+
 }
 .card{
   margin: auto;
