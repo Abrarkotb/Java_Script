@@ -1,7 +1,7 @@
 onload=()=>{
   if(document.cookie.indexOf("email")===0)
   {
-    window.open("../Pages/Home.html","_self");
+    window.open("../Pages/Index.html","_self");
   }
 }
 const formm = document.querySelector("form");
@@ -32,7 +32,7 @@ delete user["submit_btn"];
 delete user["reset_btn"];
 
   window.localStorage.setItem(all_items[8].value, JSON.stringify(user));
-  window.location.href="../Pages/Home.html";
+  window.location.href="../Pages/Index.html";
 }
 else if(all_items[8].value==="")
 {

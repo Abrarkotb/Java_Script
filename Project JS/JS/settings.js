@@ -5,7 +5,7 @@ addEventListener("load",()=>{
         if(document.cookie.indexOf("email")!==0)
         {
           window.stop();
-          window.open("../Pages/Home.html","_self")
+          window.open("../Pages/Index.html","_self")
         }
     let cookindex=document.cookie.indexOf("email");
 if(cookindex===0)

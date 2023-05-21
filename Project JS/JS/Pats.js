@@ -30,7 +30,7 @@ login_btn.addEventListener("click",(e)=>{
 })
 let logout_btn=document.getElementById("Logout_btn");
 logout_btn.addEventListener("click",(e)=>{
-    window.open("../Pages/Home.html","_self");
+    window.open("../Pages/Index.html","_self");
     document.cookie="email=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 })
 let About_btn=document.getElementById("about_btn");
@@ -45,7 +45,7 @@ if(Home_btn)
     {
 Home_btn.addEventListener("click",()=>{
     
-    window.open("../Pages/Home.html","_self");
+    window.open("../Pages/Index.html","_self");
 },false)
 }
 

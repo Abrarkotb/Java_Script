@@ -1,4 +1,17 @@
-
+onload=()=>{
+  let val=document.cookie.indexOf("email");
+  if(val!==0)
+  {
+    window.open("../Pages/Index.html","_self");
+  }
+}
+let logout_btnn=document.getElementById("logout_user");
+if(logout_btnn)
+{logout_btnn.addEventListener("click",(e)=>{
+    window.open("../Pages/Index.html","_self");
+    document.cookie="email=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+},false)
+}
 // function myFunction() {
 //     var x = document.getElementById("pass_old");
 //     if (x.type === "password") {

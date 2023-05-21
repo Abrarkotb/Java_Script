@@ -2,7 +2,7 @@ onload=()=>{
   let val=document.cookie.indexOf("email");
   if(val!==0)
   {
-    window.open("../Pages/Home.html","_self");
+    window.open("../Pages/Index.html","_self");
   }
   let navbar=document.getElementById("nav_items");
   let login_bt=document.getElementById("log_btnn");

@@ -2,7 +2,7 @@ onload=()=>{
   if(document.cookie.indexOf("email")===0)
   {
     window.stop();
-    window.open("../Pages/Home.html","_self")
+    window.open("../Pages/Index.html","_self")
   }
   
   let loginbotton =document.getElementById("log_butt");  
@@ -22,7 +22,7 @@ if(storedemail !==  null)
  if(storedpass === pass_btn.value){
         setcookie()
         alert('login succesfuly');
-        window.open("../Pages/Home.html","_self");
+        window.open("../Pages/Index.html","_self");
       }
       else if(storedpass !== pass_btn.value){
           alert('invaild password,try again')
