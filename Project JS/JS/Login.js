@@ -1,9 +1,8 @@
 onload=()=>{
-    if(document.cookie.indexOf("email")===0)
-    {
-      window.stop();
-      window.open("../Pages/Home.html","_self")
-    }
+  if(document.cookie.indexOf("email")===0)
+  {
+    window.stop();
+    window.open("../Pages/Home.html","_self")
   }
   let login_email=document.getElementById("log_email");
   let pass_btn=document.getElementById("pass_log");
@@ -11,7 +10,7 @@ onload=()=>{
   loginbotton.addEventListener("click",()=>
 {
    check_user();
-})
+})}
 
 function check_user(){
     let storedemail =JSON.parse(window.localStorage.getItem(login_email.value));
