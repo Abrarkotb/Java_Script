@@ -57,3 +57,13 @@ Category_btn.addEventListener("click",()=>{
     window.open("../Pages/Categores .html","_self");
 },false)
 }
+
+
+let index_2= document.getElementById("wel");
+if(index_2)
+    {
+index_2.addEventListener("click",()=>{
+    
+    window.open("pages/index.html","_self");
+},false)
+}
